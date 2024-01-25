@@ -40,7 +40,14 @@ For a customer to successfully rent a book, two essential relational operations 
 
 In the event of any failure during the subsequent operations, the entire transaction is rolled back, undoing all previous actions. Conversely, if all steps are completed successfully, the database changes are committed, and the lock from the initial modification step is released. Importantly, by only locking a single database resource (the copy's status), the transaction avoids the 'Hold and Wait' condition necessary for deadlocks, ensuring a smooth and deadlock-free process during copy rental transactions.
 
+## Usage <a name="usage"></a>
+To use this project, please follow the instructions below:
+1. Install the required dependencies (Mysql, Xampp, PHP).
+2. Clone or download the repository to your local machine under /Xampp/htdocs.
+3. Using /db scripts to generate local database.
+4. Make sure Apache and MySQL is running on Xampp.
 
+Head to http://localhost/real4/index/index.php, use the root user to login(user name: az1, pw: 1234567).
 
 ## Web-based UI <a name="web-"></a>
 ### 1. Login/Signup
@@ -73,14 +80,6 @@ In the event of any failure during the subsequent operations, the entire transac
 ### 10. Payment History
 ![image](/pictures/payment.png)
 
-## Usage <a name="usage"></a>
-To use this project, please follow the instructions below:
-1. Install the required dependencies (Mysql, Xampp, PHP).
-2. Clone or download the repository to your local machine under /Xampp/htdocs.
-3. Using /db scripts to generate local database.
-4. Make sure Apache and MySQL is running on Xampp.
-
-Head to http://localhost/real4/index/index.php, use the root user to login(user name: az1, pw: 1234567).
 
 
 
